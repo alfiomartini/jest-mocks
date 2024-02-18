@@ -36,7 +36,7 @@ describe("Mock function 'jest.fn()'", () => {
   });
 
   test("mock return value", () => {
-    // shortcut for jest.fn();mockImplementation(()=> value);
+    // shortcut for jest.fn().mockImplementation(()=> value);
     const mock = jest.fn();
     mock.mockReturnValue("bar");
 
@@ -71,5 +71,3 @@ describe("Dependency injection", () => {
     expect(result).toBe(10);
   });
 });
-
-describe("Mocking Modules and Functions", () => {});

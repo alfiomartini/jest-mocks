@@ -1,6 +1,7 @@
 import * as app from "../example/app.js";
 import * as math from "../example/math.js";
 
+// this means that all functions are defined as 'jest.fn'
 jest.mock("../example/math.js");
 
 describe("Jest.mock (mock modules)", () => {
